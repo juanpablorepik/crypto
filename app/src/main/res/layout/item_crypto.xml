@@ -37,7 +37,7 @@
             tools:text="Juan" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/cryptoPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$ cryptoPrice"
