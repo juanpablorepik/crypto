@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crypto">
         <activity
-            android:name="com.example.crypto.UI.Main.CryptoMain"
+            android:name="com.example.crypto.ui.main.CryptoMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

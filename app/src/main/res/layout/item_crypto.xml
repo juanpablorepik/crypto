@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    xmlns:app ="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:textAlignment="center"
+    android:elevation="4dp"
+    android:padding="4dp"
+    android:outlineAmbientShadowColor="@color/black"
     >
 
+
         <TextView
-            android:id="@+id/cryptoName"
+            android:id="@+id/nameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
             android:shadowColor="@android:color/transparent"
-            android:shadowDx="0"
+            android:shadowDx="1"
             android:shadowDy="0"
-            android:shadowRadius="0"
+            android:shadowRadius="1"
+            android:textAlignment="inherit"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.265"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/symbolText"
+            app:layout_constraintStart_toStartOf="@+id/divider"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Juan" />
 
         <TextView
-            android:id="@+id/cryptoSymbol"
+            android:id="@+id/symbolText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="italic"
@@ -37,14 +45,26 @@
             tools:text="Juan" />
 
         <TextView
-            android:id="@+id/cryptoPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/priceText"
+            android:layout_width="97dp"
+            android:layout_height="21dp"
             android:text="$ cryptoPrice"
+            android:textAlignment="textEnd"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.954"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp"
+            tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
